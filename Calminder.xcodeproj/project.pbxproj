@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED9E4B6E1E932B1F0070C6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */; };
+		ED9E4B701E932B1F0070C6F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */; };
+		ED9E4B731E932B1F0070C6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9E4B711E932B1F0070C6F6 /* Main.storyboard */; };
+		ED9E4B751E932B1F0070C6F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9E4B741E932B1F0070C6F6 /* Assets.xcassets */; };
+		ED9E4B781E932B1F0070C6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9E4B761E932B1F0070C6F6 /* LaunchScreen.storyboard */; };
+		ED9E4B831E932B1F0070C6F6 /* CalminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B821E932B1F0070C6F6 /* CalminderTests.swift */; };
+		ED9E4B8E1E932B1F0070C6F6 /* CalminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B8D1E932B1F0070C6F6 /* CalminderUITests.swift */; };
+		ED9E4B9D1E9353F90070C6F6 /* BriefCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B9C1E9353F90070C6F6 /* BriefCollectionViewController.swift */; };
+		ED9FC0441E949CC000C52733 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FC0431E949CC000C52733 /* CalendarCell.swift */; };
+		ED9FC0461E94A0B400C52733 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FC0451E94A0B400C52733 /* DateManager.swift */; };
+		EDD7012D1E974A4A00DA7D37 /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED9E4B7F1E932B1F0070C6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED9E4B621E932B1E0070C6F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED9E4B691E932B1E0070C6F6;
+			remoteInfo = Calminder;
+		};
+		ED9E4B8A1E932B1F0070C6F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED9E4B621E932B1E0070C6F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED9E4B691E932B1E0070C6F6;
+			remoteInfo = Calminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED9E4B6A1E932B1F0070C6F6 /* Calminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED9E4B721E932B1F0070C6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED9E4B741E932B1F0070C6F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED9E4B771E932B1F0070C6F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED9E4B791E932B1F0070C6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9E4B7E1E932B1F0070C6F6 /* CalminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9E4B821E932B1F0070C6F6 /* CalminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalminderTests.swift; sourceTree = "<group>"; };
+		ED9E4B841E932B1F0070C6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9E4B891E932B1F0070C6F6 /* CalminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9E4B8D1E932B1F0070C6F6 /* CalminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalminderUITests.swift; sourceTree = "<group>"; };
+		ED9E4B8F1E932B1F0070C6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9E4B9C1E9353F90070C6F6 /* BriefCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefCollectionViewController.swift; sourceTree = "<group>"; };
+		ED9FC0431E949CC000C52733 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		ED9FC0451E94A0B400C52733 /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekHeaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED9E4B671E932B1E0070C6F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B7B1E932B1F0070C6F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B861E932B1F0070C6F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED9E4B611E932B1E0070C6F6 = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B6C1E932B1F0070C6F6 /* Calminder */,
+				ED9E4B811E932B1F0070C6F6 /* CalminderTests */,
+				ED9E4B8C1E932B1F0070C6F6 /* CalminderUITests */,
+				ED9E4B6B1E932B1F0070C6F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED9E4B6B1E932B1F0070C6F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B6A1E932B1F0070C6F6 /* Calminder.app */,
+				ED9E4B7E1E932B1F0070C6F6 /* CalminderTests.xctest */,
+				ED9E4B891E932B1F0070C6F6 /* CalminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED9E4B6C1E932B1F0070C6F6 /* Calminder */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B9B1E93537A0070C6F6 /* ViewControllers */,
+				ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */,
+				ED9FC0451E94A0B400C52733 /* DateManager.swift */,
+				ED9FC0431E949CC000C52733 /* CalendarCell.swift */,
+				ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */,
+				ED9E4B711E932B1F0070C6F6 /* Main.storyboard */,
+				ED9E4B741E932B1F0070C6F6 /* Assets.xcassets */,
+				ED9E4B761E932B1F0070C6F6 /* LaunchScreen.storyboard */,
+				ED9E4B791E932B1F0070C6F6 /* Info.plist */,
+			);
+			path = Calminder;
+			sourceTree = "<group>";
+		};
+		ED9E4B811E932B1F0070C6F6 /* CalminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B821E932B1F0070C6F6 /* CalminderTests.swift */,
+				ED9E4B841E932B1F0070C6F6 /* Info.plist */,
+			);
+			path = CalminderTests;
+			sourceTree = "<group>";
+		};
+		ED9E4B8C1E932B1F0070C6F6 /* CalminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B8D1E932B1F0070C6F6 /* CalminderUITests.swift */,
+				ED9E4B8F1E932B1F0070C6F6 /* Info.plist */,
+			);
+			path = CalminderUITests;
+			sourceTree = "<group>";
+		};
+		ED9E4B9B1E93537A0070C6F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9E4B9C1E9353F90070C6F6 /* BriefCollectionViewController.swift */,
+				EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED9E4B691E932B1E0070C6F6 /* Calminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED9E4B921E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "Calminder" */;
+			buildPhases = (
+				ED9E4B661E932B1E0070C6F6 /* Sources */,
+				ED9E4B671E932B1E0070C6F6 /* Frameworks */,
+				ED9E4B681E932B1E0070C6F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calminder;
+			productName = Calminder;
+			productReference = ED9E4B6A1E932B1F0070C6F6 /* Calminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED9E4B7D1E932B1F0070C6F6 /* CalminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED9E4B951E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderTests" */;
+			buildPhases = (
+				ED9E4B7A1E932B1F0070C6F6 /* Sources */,
+				ED9E4B7B1E932B1F0070C6F6 /* Frameworks */,
+				ED9E4B7C1E932B1F0070C6F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED9E4B801E932B1F0070C6F6 /* PBXTargetDependency */,
+			);
+			name = CalminderTests;
+			productName = CalminderTests;
+			productReference = ED9E4B7E1E932B1F0070C6F6 /* CalminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED9E4B881E932B1F0070C6F6 /* CalminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED9E4B981E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderUITests" */;
+			buildPhases = (
+				ED9E4B851E932B1F0070C6F6 /* Sources */,
+				ED9E4B861E932B1F0070C6F6 /* Frameworks */,
+				ED9E4B871E932B1F0070C6F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED9E4B8B1E932B1F0070C6F6 /* PBXTargetDependency */,
+			);
+			name = CalminderUITests;
+			productName = CalminderUITests;
+			productReference = ED9E4B891E932B1F0070C6F6 /* CalminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED9E4B621E932B1E0070C6F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = saeko0032;
+				TargetAttributes = {
+					ED9E4B691E932B1E0070C6F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MY9Q5UCLRX;
+						ProvisioningStyle = Automatic;
+					};
+					ED9E4B7D1E932B1F0070C6F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MY9Q5UCLRX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED9E4B691E932B1E0070C6F6;
+					};
+					ED9E4B881E932B1F0070C6F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MY9Q5UCLRX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED9E4B691E932B1E0070C6F6;
+					};
+				};
+			};
+			buildConfigurationList = ED9E4B651E932B1E0070C6F6 /* Build configuration list for PBXProject "Calminder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED9E4B611E932B1E0070C6F6;
+			productRefGroup = ED9E4B6B1E932B1F0070C6F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED9E4B691E932B1E0070C6F6 /* Calminder */,
+				ED9E4B7D1E932B1F0070C6F6 /* CalminderTests */,
+				ED9E4B881E932B1F0070C6F6 /* CalminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED9E4B681E932B1E0070C6F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9E4B781E932B1F0070C6F6 /* LaunchScreen.storyboard in Resources */,
+				ED9E4B751E932B1F0070C6F6 /* Assets.xcassets in Resources */,
+				ED9E4B731E932B1F0070C6F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B7C1E932B1F0070C6F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B871E932B1F0070C6F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED9E4B661E932B1E0070C6F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD7012D1E974A4A00DA7D37 /* WeekHeaderView.swift in Sources */,
+				ED9E4B701E932B1F0070C6F6 /* ViewController.swift in Sources */,
+				ED9FC0461E94A0B400C52733 /* DateManager.swift in Sources */,
+				ED9E4B9D1E9353F90070C6F6 /* BriefCollectionViewController.swift in Sources */,
+				ED9E4B6E1E932B1F0070C6F6 /* AppDelegate.swift in Sources */,
+				ED9FC0441E949CC000C52733 /* CalendarCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B7A1E932B1F0070C6F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9E4B831E932B1F0070C6F6 /* CalminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9E4B851E932B1F0070C6F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9E4B8E1E932B1F0070C6F6 /* CalminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED9E4B801E932B1F0070C6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED9E4B691E932B1E0070C6F6 /* Calminder */;
+			targetProxy = ED9E4B7F1E932B1F0070C6F6 /* PBXContainerItemProxy */;
+		};
+		ED9E4B8B1E932B1F0070C6F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED9E4B691E932B1E0070C6F6 /* Calminder */;
+			targetProxy = ED9E4B8A1E932B1F0070C6F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED9E4B711E932B1F0070C6F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED9E4B721E932B1F0070C6F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED9E4B761E932B1F0070C6F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED9E4B771E932B1F0070C6F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED9E4B901E932B1F0070C6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED9E4B911E932B1F0070C6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED9E4B931E932B1F0070C6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = Calminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.Calminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ED9E4B941E932B1F0070C6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = Calminder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.Calminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ED9E4B961E932B1F0070C6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = CalminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.CalminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calminder.app/Calminder";
+			};
+			name = Debug;
+		};
+		ED9E4B971E932B1F0070C6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = CalminderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.CalminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calminder.app/Calminder";
+			};
+			name = Release;
+		};
+		ED9E4B991E932B1F0070C6F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = CalminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.CalminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Calminder;
+			};
+			name = Debug;
+		};
+		ED9E4B9A1E932B1F0070C6F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MY9Q5UCLRX;
+				INFOPLIST_FILE = CalminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.CalminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Calminder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED9E4B651E932B1E0070C6F6 /* Build configuration list for PBXProject "Calminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9E4B901E932B1F0070C6F6 /* Debug */,
+				ED9E4B911E932B1F0070C6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED9E4B921E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "Calminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9E4B931E932B1F0070C6F6 /* Debug */,
+				ED9E4B941E932B1F0070C6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED9E4B951E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9E4B961E932B1F0070C6F6 /* Debug */,
+				ED9E4B971E932B1F0070C6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED9E4B981E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED9E4B991E932B1F0070C6F6 /* Debug */,
+				ED9E4B9A1E932B1F0070C6F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED9E4B621E932B1E0070C6F6 /* Project object */;
+}
