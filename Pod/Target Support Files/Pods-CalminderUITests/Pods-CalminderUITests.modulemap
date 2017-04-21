@@ -1,6 +1,0 @@
-framework module Pods_CalminderUITests {
-  umbrella header "Pods-CalminderUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
