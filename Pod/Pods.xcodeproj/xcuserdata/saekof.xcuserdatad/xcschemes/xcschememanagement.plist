@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Calminder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CalminderTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-CalminderUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Protobuf.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>10E77ED1C53D44EB4FBC8CEBDC4A4021</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>400B0394F51F4AC5B209402E59A0251C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85727BAFE5B0F8A8E8B3740D832B277D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5B80060FE8C664DF08841000F41D515</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E72CFA821AF0CF6E6F146413F1DDC414</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
