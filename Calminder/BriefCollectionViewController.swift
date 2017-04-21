@@ -24,7 +24,7 @@ class BriefCollectionViewController: UIViewController, UICollectionViewDelegate,
 
         // Register cell classes
    //     collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        let kind = UICollectionElementKindSectionHeader
+       // let kind = UICollectionElementKindSectionHeader
         
       //  collectionView?.register()
         // Do any additional setup after loading the view.
@@ -38,34 +38,41 @@ class BriefCollectionViewController: UIViewController, UICollectionViewDelegate,
     // MARK: UICollectionViewDataSource
 
      func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 1 // date parts
     }
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-//        if section == 0 {
-//            return 7
-//        } else {
-            let dataManager = DateManager()
-            return dataManager.daysForMonth()
-//        }
+        let dateManager = DateManager()
+        return dateManager.daysForMonth(selectedCalendar: Calendar.current) // return this month's days
+
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell,
                         forItemAt indexPath: IndexPath) {
-        guard let cell = cell as? CalendarCell else { return }
+        guard cell is CalendarCell else { return }
         //days
 //        cell.dayLabel.text = "1"
     }
 
     func collectionView(_ collectionView: UICollectionView,
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell: CalendarCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CalendarCell
+        
+        if indexPath.row % 7 == 0 {
+            cell.dayLabel.textColor = UIColor.red
+        } else if indexPath.row % 7 == 6 {
+            cell.dayLabel.textColor = UIColor.blue
+        } else {
+            cell.dayLabel.textColor = UIColor.darkGray
+        }
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-        guard let view = view as? WeekHeaderView else { return }
+        guard view is WeekHeaderView else { return }
         // nanika
     }
     

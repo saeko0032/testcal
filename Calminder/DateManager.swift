@@ -9,28 +9,52 @@
 import UIKit
 
 class DateManager: NSObject {
-    var currentMonthOfDates = [NSDate]()
-    var selectedDate = NSDate()
+    let now = Date()
     let daysPerWeek: Int = 7
     var numberOfItems: Int!
     
-    func daysForMonth() -> Int {
-        let calendar = Calendar.current
-
-        let component = calendar.dateComponents([.day, .month, .year], from: Date())
-        let date = calendar.date(from: DateComponents(year: component.year, month: component.month))
-        // days
-        numberOfItems = calendar.range(of: .day, in: .month, for: date!)?.count
-        return numberOfItems
     
+    
+    // how many days you have
+    func daysForMonth(selectedCalendar:Calendar?) -> Int {
+        let calendar = selectedCalendar
+        
+        let component = calendar?.dateComponents([.day, .month, .year], from: Date())
+        let date = (calendar?.date(from: DateComponents(year: component?.year, month: component?.month)))!
+        numberOfItems = calendar?.range(of: .day, in: .month, for: date)?.count
+        return numberOfItems
     }
     
-//    func firstDateOfMonth() -> Date {
-//        let components = NSCalendar.current.components([.year, .month, .day], from: selectedDate)
-//        components.day = 1
-//        let firstDateOfMonth = NSCalendar.current.date(from: components)
-//        return firstDateOfMonth
-//    
-//    }
-
+    func firstDayOfMonth(selectedCalendar:Calendar?) -> Int {
+        return selectedCalendar!.firstWeekday // 1:sun 2:mon 3:tue 4:wed 5:thu 6:fri 7:sat
+    }
+    
+    func firstDateOfMonth() -> Date {
+        let calendar = Calendar.current
+        
+        let component = calendar.dateComponents([.day, .month, .year], from: Date())
+        let firstDateOfMonth = (calendar.date(from: DateComponents(year: component.year, month: component.month)))!
+    
+        return firstDateOfMonth
+    }
+    
+    
+    func dateForCellAtIndexPath(selectedCalendar:Calendar?, numberOfItems: Int) {
+        let calendar = selectedCalendar
+        
+        let component = calendar?.dateComponents([.day, .month, .year], from: Date())
+        let date = calendar?.date(from: DateComponents(year: component?.year, month: component?.month))
+        
+        let ordinalityOfFirstDay = selectedCalendar?.ordinality(of: .day, in: .month , for: date!)
+    
+        for var i in 1...numberOfItems {
+            var dateComponents = DateComponents()
+            dateComponents.day = i - (ordinalityOfFirstDay! - 1)
+            i += 1
+            let firstDate = calendar!.date(byAdding: dateComponents, to: firstDateOfMonth())
+            //return firstDate
+        }
+    }
+    
+    
 }

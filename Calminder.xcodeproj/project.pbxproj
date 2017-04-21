@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231CC694B91AA6AEB9E6F721 /* Pods_Calminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B91AFE136FB0C80467CE388 /* Pods_Calminder.framework */; };
+		ED9A93411EA6F25C0030321E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED9A93401EA6F25C0030321E /* GoogleService-Info.plist */; };
+		ED9A93441EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json in Resources */ = {isa = PBXBuildFile; fileRef = ED9A93431EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json */; };
 		ED9E4B6E1E932B1F0070C6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */; };
 		ED9E4B701E932B1F0070C6F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */; };
 		ED9E4B731E932B1F0070C6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9E4B711E932B1F0070C6F6 /* Main.storyboard */; };
@@ -18,6 +21,8 @@
 		ED9FC0441E949CC000C52733 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FC0431E949CC000C52733 /* CalendarCell.swift */; };
 		ED9FC0461E94A0B400C52733 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FC0451E94A0B400C52733 /* DateManager.swift */; };
 		EDD7012D1E974A4A00DA7D37 /* WeekHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */; };
+		EF1B85A80ACECC3C489CF095 /* Pods_CalminderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E36C92B104D1F0AA90BDEE9 /* Pods_CalminderTests.framework */; };
+		F19DED2CC39EDC1558914F97 /* Pods_CalminderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FD981D3091E2A7F2F2B429 /* Pods_CalminderUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D622A86553E8028501795B /* Pods-Calminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calminder/Pods-Calminder.debug.xcconfig"; sourceTree = "<group>"; };
+		4B91AFE136FB0C80467CE388 /* Pods_Calminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EDE006C33A202B2B03C99ED /* Pods-CalminderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalminderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalminderTests/Pods-CalminderTests.release.xcconfig"; sourceTree = "<group>"; };
+		663C6801F7BE7A03423DAFAB /* Pods-CalminderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalminderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalminderUITests/Pods-CalminderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6E36C92B104D1F0AA90BDEE9 /* Pods_CalminderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalminderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B50CE96F38926F300088B613 /* Pods-CalminderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalminderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalminderUITests/Pods-CalminderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5FD981D3091E2A7F2F2B429 /* Pods_CalminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6ABEFC46B37DDC380F4B8F4 /* Pods-CalminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalminderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalminderTests/Pods-CalminderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2C63E85CE94D335DBB63C29 /* Pods-Calminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calminder/Pods-Calminder.release.xcconfig"; sourceTree = "<group>"; };
+		ED9A93401EA6F25C0030321E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED9A93431EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json"; sourceTree = "<group>"; };
 		ED9E4B6A1E932B1F0070C6F6 /* Calminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231CC694B91AA6AEB9E6F721 /* Pods_Calminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1B85A80ACECC3C489CF095 /* Pods_CalminderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19DED2CC39EDC1558914F97 /* Pods_CalminderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A808F256D32F0E5D1D84325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B91AFE136FB0C80467CE388 /* Pods_Calminder.framework */,
+				6E36C92B104D1F0AA90BDEE9 /* Pods_CalminderTests.framework */,
+				C5FD981D3091E2A7F2F2B429 /* Pods_CalminderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9771AE65F748F2CEA3A60899 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D622A86553E8028501795B /* Pods-Calminder.debug.xcconfig */,
+				E2C63E85CE94D335DBB63C29 /* Pods-Calminder.release.xcconfig */,
+				D6ABEFC46B37DDC380F4B8F4 /* Pods-CalminderTests.debug.xcconfig */,
+				4EDE006C33A202B2B03C99ED /* Pods-CalminderTests.release.xcconfig */,
+				B50CE96F38926F300088B613 /* Pods-CalminderUITests.debug.xcconfig */,
+				663C6801F7BE7A03423DAFAB /* Pods-CalminderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED9E4B611E932B1E0070C6F6 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +131,8 @@
 				ED9E4B811E932B1F0070C6F6 /* CalminderTests */,
 				ED9E4B8C1E932B1F0070C6F6 /* CalminderUITests */,
 				ED9E4B6B1E932B1F0070C6F6 /* Products */,
+				9771AE65F748F2CEA3A60899 /* Pods */,
+				5A808F256D32F0E5D1D84325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +152,13 @@
 				ED9E4B9B1E93537A0070C6F6 /* ViewControllers */,
 				ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */,
 				ED9FC0451E94A0B400C52733 /* DateManager.swift */,
-				ED9FC0431E949CC000C52733 /* CalendarCell.swift */,
 				ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */,
 				ED9E4B711E932B1F0070C6F6 /* Main.storyboard */,
 				ED9E4B741E932B1F0070C6F6 /* Assets.xcassets */,
 				ED9E4B761E932B1F0070C6F6 /* LaunchScreen.storyboard */,
 				ED9E4B791E932B1F0070C6F6 /* Info.plist */,
+				ED9A93431EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json */,
+				ED9A93401EA6F25C0030321E /* GoogleService-Info.plist */,
 			);
 			path = Calminder;
 			sourceTree = "<group>";
@@ -141,6 +186,7 @@
 			children = (
 				ED9E4B9C1E9353F90070C6F6 /* BriefCollectionViewController.swift */,
 				EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */,
+				ED9FC0431E949CC000C52733 /* CalendarCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -152,9 +198,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9E4B921E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "Calminder" */;
 			buildPhases = (
+				1EEE61E9E00438E0E4375D89 /* [CP] Check Pods Manifest.lock */,
 				ED9E4B661E932B1E0070C6F6 /* Sources */,
 				ED9E4B671E932B1E0070C6F6 /* Frameworks */,
 				ED9E4B681E932B1E0070C6F6 /* Resources */,
+				D87E64A899027E5AA0D93FBD /* [CP] Embed Pods Frameworks */,
+				D227C4E96E54CF7F1474DAE1 /* [CP] Copy Pods Resources */,
+				ED9A93421EA6FF4F0030321E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -169,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9E4B951E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderTests" */;
 			buildPhases = (
+				46D8BC81CA4E263C373F06A1 /* [CP] Check Pods Manifest.lock */,
 				ED9E4B7A1E932B1F0070C6F6 /* Sources */,
 				ED9E4B7B1E932B1F0070C6F6 /* Frameworks */,
 				ED9E4B7C1E932B1F0070C6F6 /* Resources */,
+				1E91C6D7F32B620DEBFDC077 /* [CP] Embed Pods Frameworks */,
+				8ACF7BE8018ECA1AEBB10448 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9E4B981E932B1F0070C6F6 /* Build configuration list for PBXNativeTarget "CalminderUITests" */;
 			buildPhases = (
+				6B2785AF8F82D7437220B95E /* [CP] Check Pods Manifest.lock */,
 				ED9E4B851E932B1F0070C6F6 /* Sources */,
 				ED9E4B861E932B1F0070C6F6 /* Frameworks */,
 				ED9E4B871E932B1F0070C6F6 /* Resources */,
+				279F872E4A80B8E0E60D41A0 /* [CP] Embed Pods Frameworks */,
+				1B1E1AAE9CD64EA24139C4CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9E4B781E932B1F0070C6F6 /* LaunchScreen.storyboard in Resources */,
+				ED9A93411EA6F25C0030321E /* GoogleService-Info.plist in Resources */,
+				ED9A93441EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json in Resources */,
 				ED9E4B751E932B1F0070C6F6 /* Assets.xcassets in Resources */,
 				ED9E4B731E932B1F0070C6F6 /* Main.storyboard in Resources */,
 			);
@@ -276,6 +334,157 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B1E1AAE9CD64EA24139C4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalminderUITests/Pods-CalminderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E91C6D7F32B620DEBFDC077 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalminderTests/Pods-CalminderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EEE61E9E00438E0E4375D89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		279F872E4A80B8E0E60D41A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalminderUITests/Pods-CalminderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D8BC81CA4E263C373F06A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B2785AF8F82D7437220B95E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ACF7BE8018ECA1AEBB10448 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalminderTests/Pods-CalminderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D227C4E96E54CF7F1474DAE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calminder/Pods-Calminder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D87E64A899027E5AA0D93FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calminder/Pods-Calminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED9A93421EA6FF4F0030321E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:2221080398593:ios:461ef20e389e347b\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Users/saekof/Documents/Calminder/Calminder/calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED9E4B661E932B1E0070C6F6 /* Sources */ = {
@@ -385,6 +594,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lz";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -427,6 +637,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lz";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -435,11 +646,37 @@
 		};
 		ED9E4B931E932B1F0070C6F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D622A86553E8028501795B /* Pods-Calminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MY9Q5UCLRX;
 				INFOPLIST_FILE = Calminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCrash\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.Calminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -448,11 +685,37 @@
 		};
 		ED9E4B941E932B1F0070C6F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C63E85CE94D335DBB63C29 /* Pods-Calminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MY9Q5UCLRX;
 				INFOPLIST_FILE = Calminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCrash\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GoogleToolboxForMac\"",
+					"-framework",
+					"\"Protobuf\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = saeko0032.Calminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -461,6 +724,7 @@
 		};
 		ED9E4B961E932B1F0070C6F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6ABEFC46B37DDC380F4B8F4 /* Pods-CalminderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -476,6 +740,7 @@
 		};
 		ED9E4B971E932B1F0070C6F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EDE006C33A202B2B03C99ED /* Pods-CalminderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +756,7 @@
 		};
 		ED9E4B991E932B1F0070C6F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B50CE96F38926F300088B613 /* Pods-CalminderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MY9Q5UCLRX;
@@ -505,6 +771,7 @@
 		};
 		ED9E4B9A1E932B1F0070C6F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663C6801F7BE7A03423DAFAB /* Pods-CalminderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = MY9Q5UCLRX;

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "calminder-30b34",
+  "private_key_id": "eb3be2e273ab615da8cefc5da087651812c3c95c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDBLu1RNOZr9JpN\nLKikalPfKBCow9mN4ivasCabrYRAcJfXUcS+yX2GzS5dbfdTPyJQHqSZFaS2tkV9\nH5rXAG5oNmEiC3xNDINortk7af/5T8iYPkC17HUW71Nchhi7tPRUlLM9CwwL4uDU\n3OvAUIzDprVVqLQGWS6f9iE1xman58l/Y3ZSEW3d3wXPGdfMVKPMj/0Kn4S6XpXi\nIkTfXiQcyXwtcmyNP+7qoZS8stMn+nywuHRFn9HJUaUAsx8ueMvaHv9UXLqjS2Ap\nv12xLtq4nc9gzW0ynwtI3YW+9mvzhsGYRPOxEbjKqk1nNyBX5jEbt84UxcCXIFZD\nkG/tl0ZhAgMBAAECggEAclIR8I+MmHA869S0y+98SMAN88FKulMQvq6lelUZwYSf\n5rUl5/2XAjHj8ThFN4dSB/XKVClhuxpsTtpoKDnCHHupyZrgaTwxe76VITreVyxm\nuemFI+OVewgP3d4hPtucB32kAEjMTTBq+qzt+nXwh0vdXZ6jQmp+U/00s/z//PX/\nYo6//iKIQTvR4uBi0Q1wmmYDfRDcTpT9MWwJnN5syZUmNfSVXBGskPbpdKVrCN84\nr1X723jX2FpAY6F3wLn7kra7Mr+Yslp/mU/w8d2BwO3UFfSopQZpcplteNRGvGed\nu/Z7le7+sPkL65d/1hDWZXfg2oBZn8gJSc4ub05xPQKBgQDpCOdIXxkclY4mnOcM\nIjeedxHaKh2TRpqeXEt7QJSkMWOzlZM1CeM3JEbyazBY5oKXqB9zfDAMR7eritdp\nFDUTT4cl1PvDC0nkWsUnxgSqMx161bIiz0DVMXJWgaQ9g0a82rTZIk1u/454WJJO\nloVpOlck91dUJ8Y3htAK1Tjf/wKBgQDUOKJoadWTI/ijROdDqHmDkb2z9nP63mFR\np4jkFWdeDqV9UsM6LPGij+hAiV+TEPvJ7UkeWVYw8ll/zs/d7kPglzLglW1JuLzv\nL4fgPbmaCGsWs54aFCoOFXIkLnN1hLDF4jCBw/ji2old/Ln1gHKlbAoWrfz5aiVu\niSm3VpvZnwKBgALYOPqJLqVKrhGKmMdtI4Crs2wWV4YUto54UfOPNkFK2Qy4JrPf\nCwcBSlxrMovjRHTVeIzQV0XPGk7dwwNlW8CAmAW+M9SNrrk64m053ZS2SwXU1ffW\nz9PKZrrnmjmmAJcNlGeSI5/XPsX5Ts/mxnoiXC33VvmQArtqyd9X+vnBAoGAKgWg\n2w4B1WXtCN9O782/afcE2kq1wnogSRvkdk1qr2w1BrDJqY5WtnrKYWUSQLu/L8fF\nj7Xe5EhIwo8ACBDy7djioSfVgSCMgMwnmpZ+VurN0av1ZXKStUE33cQ45o9EtZpJ\nQpi8gqcFRlARvnQVv326La18ByMmkFGmqgADUj8CgYEAzxhdp3fw8yqH9XcEN7FH\nSDJd/vgujG4coEEdWfI3a0EooKCa8KgvubzG+7+bJd/DUYkknvUGroCuTRNgO0w1\n5aAz5w6ErDulPhlIWPB1Yi0dHl8oEIHi78Py2CA4VWTWIbfJeZSo+MHEieBSwJt8\nJPnq9aw5HZMsDnsSIEiM4pA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-crashreporting-1uzja@calminder-30b34.iam.gserviceaccount.com",
+  "client_id": "110876017897879251238",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-crashreporting-1uzja%40calminder-30b34.iam.gserviceaccount.com"
+}
