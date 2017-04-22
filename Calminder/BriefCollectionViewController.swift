@@ -12,6 +12,7 @@ private let reuseIdentifier = "DayCell"
 private let headerReuseIdentifier = "WeekHeader"
 
 class BriefCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    let dateManager = DateManager()
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var addBtn: UIBarButtonItem!
     @IBOutlet weak var searchBtn: UIBarButtonItem!
@@ -67,7 +68,7 @@ class BriefCollectionViewController: UIViewController, UICollectionViewDelegate,
         } else {
             cell.dayLabel.textColor = UIColor.darkGray
         }
-        
+        cell.dayLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
         return cell
     }
     
@@ -82,8 +83,6 @@ class BriefCollectionViewController: UIViewController, UICollectionViewDelegate,
 
 
     // MARK: IBAction
-    @IBAction func tappedAddBtn(sender: UIButton) {
-    }
     
     @IBAction func tappedSearchBtn(sender: UIButton) {
     }

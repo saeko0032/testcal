@@ -9,6 +9,7 @@
 import UIKit
 
 class DateManager: NSObject {
+    var currentMonthOfDates = [Date]()
     let now = Date()
     let daysPerWeek: Int = 7
     var numberOfItems: Int!
@@ -49,11 +50,18 @@ class DateManager: NSObject {
     
         for var i in 1...numberOfItems {
             var dateComponents = DateComponents()
-            dateComponents.day = i - (ordinalityOfFirstDay! - 1)
+            dateComponents.day = i - (ordinalityOfFirstDay!)
             i += 1
             let firstDate = calendar!.date(byAdding: dateComponents, to: firstDateOfMonth())
-            //return firstDate
+            currentMonthOfDates.append(firstDate!)
         }
+    }
+    
+    func conversionDateFormat(indexPath: NSIndexPath) -> String {
+        dateForCellAtIndexPath(selectedCalendar: Calendar.current, numberOfItems: daysForMonth(selectedCalendar: Calendar.current))
+        let formatter: DateFormatter = DateFormatter()
+        formatter.dateFormat = "d"
+        return formatter.string(from: currentMonthOfDates[indexPath.row])
     }
     
     
