@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EventKit
 
 private let reuseIdentifier = "DayCell"
 private let headerReuseIdentifier = "WeekHeader"
@@ -22,71 +23,73 @@ class BriefCollectionViewController: UIViewController, UICollectionViewDelegate,
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-
-        // Register cell classes
-   //     collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-       // let kind = UICollectionElementKindSectionHeader
-        
-      //  collectionView?.register()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: UICollectionViewDataSource
-
+    // day part is a header, so I need only 1 section for days
      func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1 // date parts
+        return 1
     }
 
-
+    // ex)April->30 Feb->28
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        let dateManager = DateManager()
-        return dateManager.daysForMonth(selectedCalendar: Calendar.current) // return this month's days
-
+        return dateManager.cellsForMonth()
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell,
                         forItemAt indexPath: IndexPath) {
-        guard cell is CalendarCell else { return }
-        //days
-//        cell.dayLabel.text = "1"
+        guard cell is CalendarCell else {
+            return
+        }
     }
 
     func collectionView(_ collectionView: UICollectionView,
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: CalendarCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CalendarCell
-        
-        if indexPath.row % 7 == 0 {
+
+        let firstDayPosition: Int = dateManager.ordinalityOfFirstDay() - 1
+        let endDayPosition: Int = firstDayPosition + dateManager.daysForMonth() - 1
+        print(endDayPosition)
+        // coloring except this month's cell
+        if indexPath.row < firstDayPosition || endDayPosition < indexPath.row {
+            cell.backgroundColor = UIColor(red: 0.9765, green: 0.9765, blue: 0.9765, alpha: 0.7)
+            cell.dayLabel.textColor = UIColor(red: 0.8588, green: 0.8588, blue: 0.8588, alpha: 1.0)
+        } else if indexPath.row % 7 == 0 {
+            // Sunday
             cell.dayLabel.textColor = UIColor.red
         } else if indexPath.row % 7 == 6 {
+            // Saturday
             cell.dayLabel.textColor = UIColor.blue
         } else {
+            // Weekday
             cell.dayLabel.textColor = UIColor.darkGray
         }
+        // what the date today
         cell.dayLabel.text = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+        
+
+        
+//        while (indexPath.row < firstDayPosition) {
+//            cell.backgroundColor = UIColor.red
+//            break;
+//        }
+        
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
-        guard view is WeekHeaderView else { return }
-        // nanika
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         return collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerReuseIdentifier, for: indexPath)
     }
 
 
-    // MARK: IBAction
-    
     @IBAction func tappedSearchBtn(sender: UIButton) {
+        
     }
     
     @IBAction func tappedCompossBtn(sender: UIButton) {
+    
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		231CC694B91AA6AEB9E6F721 /* Pods_Calminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B91AFE136FB0C80467CE388 /* Pods_Calminder.framework */; };
+		EA1F55F21EADA7C200B51B53 /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F55F11EADA7C200B51B53 /* EventManager.swift */; };
 		ED6CB9151EAAFAE400E990AA /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6CB9141EAAFAE400E990AA /* TaskTableViewController.swift */; };
 		ED9A93411EA6F25C0030321E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED9A93401EA6F25C0030321E /* GoogleService-Info.plist */; };
 		ED9A93441EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json in Resources */ = {isa = PBXBuildFile; fileRef = ED9A93431EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json */; };
@@ -53,6 +54,7 @@
 		C5FD981D3091E2A7F2F2B429 /* Pods_CalminderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalminderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ABEFC46B37DDC380F4B8F4 /* Pods-CalminderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalminderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalminderTests/Pods-CalminderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2C63E85CE94D335DBB63C29 /* Pods-Calminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calminder/Pods-Calminder.release.xcconfig"; sourceTree = "<group>"; };
+		EA1F55F11EADA7C200B51B53 /* EventManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
 		ED6CB9141EAAFAE400E990AA /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
 		ED9A93401EA6F25C0030321E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ED9A93431EA7015D0030321E /* calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json"; sourceTree = "<group>"; };
@@ -126,6 +128,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EA1F55F01EADA79600B51B53 /* Manegers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9FC0451E94A0B400C52733 /* DateManager.swift */,
+				EA1F55F11EADA7C200B51B53 /* EventManager.swift */,
+			);
+			name = Manegers;
+			sourceTree = "<group>";
+		};
 		ED9E4B611E932B1E0070C6F6 = {
 			isa = PBXGroup;
 			children = (
@@ -153,10 +164,9 @@
 			children = (
 				ED9E4B9B1E93537A0070C6F6 /* ViewControllers */,
 				ED9E4B6D1E932B1F0070C6F6 /* AppDelegate.swift */,
-				ED9FC0451E94A0B400C52733 /* DateManager.swift */,
+				EA1F55F01EADA79600B51B53 /* Manegers */,
 				ED9E4B6F1E932B1F0070C6F6 /* ViewController.swift */,
 				ED9E4B711E932B1F0070C6F6 /* Main.storyboard */,
-				ED6CB9141EAAFAE400E990AA /* TaskTableViewController.swift */,
 				ED9E4B741E932B1F0070C6F6 /* Assets.xcassets */,
 				ED9E4B761E932B1F0070C6F6 /* LaunchScreen.storyboard */,
 				ED9E4B791E932B1F0070C6F6 /* Info.plist */,
@@ -190,6 +200,7 @@
 				ED9E4B9C1E9353F90070C6F6 /* BriefCollectionViewController.swift */,
 				EDD7012C1E974A4A00DA7D37 /* WeekHeaderView.swift */,
 				ED9FC0431E949CC000C52733 /* CalendarCell.swift */,
+				ED6CB9141EAAFAE400E990AA /* TaskTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -485,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:2221080398593:ios:461ef20e389e347b\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Users/saekof/Documents/Calminder/Calminder/calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json\"\n";
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:2221080398593:ios:461ef20e389e347b\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"/Users/fukuisaeko/Github/testcal/Calminder/calminder-30b34-firebase-crashreporting-1uzja-eb3be2e273.json\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -496,6 +507,7 @@
 			files = (
 				EDD7012D1E974A4A00DA7D37 /* WeekHeaderView.swift in Sources */,
 				ED9E4B701E932B1F0070C6F6 /* ViewController.swift in Sources */,
+				EA1F55F21EADA7C200B51B53 /* EventManager.swift in Sources */,
 				ED9FC0461E94A0B400C52733 /* DateManager.swift in Sources */,
 				ED9E4B9D1E9353F90070C6F6 /* BriefCollectionViewController.swift in Sources */,
 				ED9E4B6E1E932B1F0070C6F6 /* AppDelegate.swift in Sources */,
