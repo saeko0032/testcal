@@ -64,6 +64,6 @@ class TaskTableViewController: UITableViewController {
     }
 
     @IBAction func addEventBtnTapped(_ sender: UIBarButtonItem) {
-        if let calendarForEvent = eventStore.calendar(withIdentifier: <#T##String#>)
+//        if let calendarForEvent = eventStore.calendar(withIdentifier: <#T##String#>)
     }
 }
